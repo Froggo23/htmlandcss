@@ -1,0 +1,86 @@
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+networkTimeout=10000
+validateDistributionUrl=true
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+#Sun Jul 20 15:43:34 JST 2025
+gradle.version=8.14.3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML&CSS practice</title>
+</head>
+<body>
+
+<button onclick = "doSmt()" style = "font-size:25px; background-color: aquamarine; color: forestgreen"></button>
+
+<h1 id="greeting">Hello!</h1>
+
+<script>
+    function doSmt(){
+        document.getElementById("greeting").innerHTML = "byebye"
+    }
+</script>
+</body>
+</html>spring.application.name=htmlandcss
+package ian.choe.htmlandcss;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class HtmlandcssApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML&CSS practice</title>
+</head>
+<body>
+
+<button onclick = "doSmt()" style = "font-size:25px; background-color: aquamarine; color: forestgreen"></button>
+
+<h1 id="greeting">Hello!</h1>
+
+<script>
+    function doSmt(){
+        document.getElementById("greeting").innerHTML = "byebye"
+    }
+</script>
+</body>
+</html>spring.application.name=htmlandcss
+package ian.choe.htmlandcss;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HtmlandcssApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HtmlandcssApplication.class, args);
+	}
+
+}
+package ian.choe.htmlandcss;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class controller {
+
+    @GetMapping("/test")
+    public String practice() {
+        return "practice";
+    }
+}
